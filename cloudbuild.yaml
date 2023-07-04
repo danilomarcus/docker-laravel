@@ -1,4 +1,5 @@
 steps:
 
-- name: 'ubuntu'
-  args: ['echo', 'hello world bem vindo caiaoo']
+- id: "Rodando docker-compose"
+  name: 'gcr.io/cloud-builders/docker'
+  args: ['compose','-f','docker-compose.cloudbuild.yaml','up','-d']
